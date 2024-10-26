@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
-import { Command } from 'commander';
-const program = new Command();
+import { program } from 'commander';
 
 program
   .description('Compares two configuration files and shows a difference.')
-  .version('0.1.0')
+  .version('0.0.1')
+  .helpOption('-h, --help', 'output usage information')
 
-  program.parse(process.argv)
+  program.parse()
