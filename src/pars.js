@@ -1,12 +1,7 @@
-import path from 'path';
-import fs from 'fs';
+import { readFile } from './util.js';
 
-const readFile = (filePath) => {
-    const getDirName = process.cwd(filePath);
-    const fullPath = path.resolve(getDirName, filePath);
-    return fs.readFileSync(fullPath, 'utf-8');
+const parse = (filePath) => {
+    JSON.parse(readFile(filePath))
 }
 
-//const parser = ()
-
-export { readFile }
+export default parse;
