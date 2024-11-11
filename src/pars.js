@@ -1,7 +1,5 @@
-import { readFile } from './util.js';
-
 const parse = (filePath) => {
-    JSON.parse(readFile(filePath))
+    JSON.parse(filePath)
 }
 
 export default parse;

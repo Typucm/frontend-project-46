@@ -6,7 +6,7 @@ const genDiff = (filepath1, filepath2) => {
     const dataFile2 = readFile(filepath2);
     const parseFile1 = parse(dataFile1);
     const parseFile2 = parse(dataFile2);
-    retun = parseFile1, parseFile2;
+    console.log(parseFile1, parseFile2);
 
 }
 
