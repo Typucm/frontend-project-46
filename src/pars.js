@@ -1,5 +1,5 @@
 const parse = (filePath) => {
-    JSON.parse(filePath)
+    return JSON.parse(filePath)
 }
 
 export default parse;
